@@ -1,0 +1,17 @@
+{
+  "display_name": "柚月小手机 · 设备联动桥（预览版）",
+  "loading_order": 20,
+  "dependencies": [],
+  "js": "index.js",
+  "author": "闻叙",
+  "version": "0.4.0-preview",
+  "auto_update": false,
+  "hooks": {
+    "activate": "onActivate",
+    "clean": "onClean",
+    "delete": "onDelete",
+    "disable": "onDisable"
+  },
+  "css": "style.css",
+  "minimum_client_version": "1.18.0"
+}

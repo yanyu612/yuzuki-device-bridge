@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "minimum": {
+    "sillytavern": "1.18.0",
+    "tavernHelper": null
+  },
+  "requirements": [
+    {
+      "id": "host-context",
+      "owner": "sillytavern",
+      "symbol": "SillyTavern.getContext",
+      "required": true,
+      "fallback": null
+    },
+    {
+      "id": "role-message-event",
+      "owner": "sillytavern",
+      "symbol": "SillyTavern.getContext().eventTypes.MESSAGE_RECEIVED",
+      "required": false,
+      "fallback": "角色自动控制不可用，保留手动滑块和立即停止"
+    },
+    {
+      "id": "prompt-injection",
+      "owner": "sillytavern",
+      "symbol": "SillyTavern.getContext().setExtensionPrompt",
+      "required": false,
+      "fallback": "角色自动控制不可用，保留手动滑块和立即停止"
+    },
+    {
+      "id": "virtual-phone-role-generation",
+      "owner": "provider",
+      "symbol": "window.VirtualPhone.apiManager.callAI",
+      "required": false,
+      "fallback": "柚月手机内的角色会话不参与控制，酒馆正文角色控制仍可用"
+    },
+    {
+      "id": "independent-device-bridge",
+      "owner": "provider",
+      "symbol": "http://127.0.0.1:8765/v1/status apiVersion=2",
+      "required": false,
+      "fallback": "显示本机连接/配对错误；不自动切到旧宿主掩盖独立桥接失败"
+    },
+    {
+      "id": "native-toy-safety-deadline",
+      "owner": "provider",
+      "symbol": "window.SillyDroidAndroidHostBridge.setCachitoSuctionPowerWithTimeout",
+      "required": false,
+      "fallback": "仅在用户明确选择旧原生接口模式时适用；独立设备桥由原生服务维护截止"
+    }
+  ]
+}

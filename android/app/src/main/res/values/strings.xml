@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">柚月设备桥·预览版</string>
+    <string name="title">柚月设备桥</string>
+    <string name="subtitle">在原来的酒馆里聊天 · 蓝牙留在本机</string>
+    <string name="pairing_intro">第一次使用：保存酒馆地址，再复制密钥到插件</string>
+    <string name="origin_hint">酒馆地址，如 http://127.0.0.1:8000</string>
+    <string name="max_power_hint">强度上限，默认 30（2–100）</string>
+    <string name="save_connection">保存地址与上限</string>
+    <string name="copy_pairing">复制配对密钥</string>
+    <string name="rotate_pairing">重置密钥（使旧配对失效）</string>
+    <string name="protocol_badge">已确认：诱桃·偷欢 Pro AI版（设备协议 ID 36）</string>
+    <string name="status_checking">正在检查蓝牙…</string>
+    <string name="start_bridge">开启酒馆桥接</string>
+    <string name="stop_bridge">关闭酒馆桥接</string>
+    <string name="power_label">吮吸强度 %1$d</string>
+    <string name="power_initial">吮吸：暂停</string>
+    <string name="power_paused">吮吸：暂停</string>
+    <string name="stop">停止</string>
+    <string name="clear_log">清空记录</string>
+    <string name="safety_note">手动调试最多 30 秒；0–1 为暂停。离开此页会先停止手动操作，桥接继续等待酒馆指令。通知栏可随时停止。广播成功不代表设备已回执。</string>
+    <string name="log_title">本次记录</string>
+    <string name="log_entry_format">%1$s  %2$s</string>
+</resources>

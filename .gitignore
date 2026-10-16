@@ -1,0 +1,15 @@
+android/.gradle/
+android/build/
+android/app/build/
+android/local.properties
+.gradle/
+node_modules/
+dist/
+*.jks
+*.keystore
+*.hprof
+*.log
+*.apk
+*.zip
+local-*
+PLAN.md
